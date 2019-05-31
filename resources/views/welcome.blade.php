@@ -85,8 +85,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="/register">Register</a>
-                    <a href="https://laracasts.com">Login</a>
+                    <a href="/register">Go to Test Page</a>
                 </div>
             </div>
         </div>
