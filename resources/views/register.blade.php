@@ -14,7 +14,8 @@
                <div class="row h-100 justify-content-center align-items-center">
                     <div class="col-3">
                          <div class="jumbotron">
-                              <h4 class="display-4">Fill in</h4>
+                              <h4 class="display-4">Test Page</h4>
+                              <p class="lead">Press <code>F12</code> to open developer tools and view responses.</p>
                               <hr class="my-4">
                               <form action="" id="inputForm">                             
                               <div class="form-group">
@@ -81,7 +82,7 @@
                                         'email' : $('#inputEmail').val()                                                          
                                    };
                                    
-                                   para['code'] = prompt("Verification code", "");
+                                   para['code'] = prompt("Check email for verification code and enter below", "");
                                    $.ajax('/confirm', {
                                         headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                                         type: 'POST',
