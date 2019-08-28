@@ -88,7 +88,7 @@ class RegisterController extends Controller
         try {
             $result = app()->make(CognitoClient::class)->authenticate($request->input('email'), $request->input('password'));
 
-            $accessToken = $result->get('AuthenticationResult')['AccessToken'];
+            $accessToken = $result->get('AuthenticationResult');
     
             $response = [
                 'status' => true,
